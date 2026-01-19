@@ -1,24 +1,131 @@
-
-/* shared style */
-/* color 1  */
-.color-1{
-    background-color: #412567;
-}
-/* main */
-   
-
-
-/* navber */
-.navbar{
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
+body {
+    background-color: white;
+    margin: 0;
+    /* padding: 5px; */
+    align-items: center;
 }
 
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* Navigation Bar */
+#navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 120px 0px 120px;
+}
+
+#navigation-links {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    font: bold;
+    color: white;
+}
+
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+/* Banner */
+.banner {
+    /* border: 2px solid blueviolet; */
+    text-align: center;
+    padding: 120px;
+    background-image: url("./assets/hero-bg.png");
+    /* width: 10%; */
+    background-position: center;
+    margin-bottom: 0;
+}
+
+
+.solution {
+    display: flex;
+
+}
+
+#texts-main {
+    align-content: center;
+}
+
+    
+.box1{
+    grid-area: navbar;
+}
+.box2{
+    grid-area: section;
+}
+.box3{
+    grid-area: podcast;
+}
+.box4{
+    grid-area: mike;
+}
+.box5{
+    grid-area: footer;
+}
+.container {
+    display: grid;
+    grid-template-areas:
+    "navbar section section section"
+    "navbar podcast podcast podcast"
+    "mike   mike    mike    footer";
+}
+
+
+.episode {
+    
+    text-align: center;
+  
+    margin-bottom: 50px;
+    padding: 50px;
+}
+.iframes {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 120px;
+    margin-left: 120px;
+    padding-top: 50px;
+    background-color: #001931;
+    margin-bottom: 50px;
+
+}
+.host-id {
+    display: flex;
+}
+.button-hover {
+   color: #F7F6F2;
+}
+.button-hover:hover{
+    color:black;
+}
+.button-hover-now{
+    color: #30b868;
+}
+.button-hover-now:hover{
+    color:grey;
+}
 
 
 
 
-
-
-
+#
+ bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8]
+ bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] highlight bg-clip-text text-transparent
+ width: /**var-start**/<span class="code-css--text code-css--text__6">55.07px</span>/**var-end**/;
+height: /**var-start**/<span class="code-css--text code-css--text__6">50px</span>/**var-end**/;
+background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
