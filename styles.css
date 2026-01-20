@@ -40,12 +40,21 @@ a:active {
     /* border: 2px solid blueviolet; */
     text-align: center;
     padding: 120px;
+    padding-top: 120px;
     background-image: url("./assets/hero-bg.png");
-    /* width: 10%; */
+    background-size: cover;
     background-position: center;
     margin-bottom: 0;
+    position: relative;
+    width: 84%;
+    
 }
-
+.image {
+    position: absolute;
+}
+#img-1 {
+    width:320px;
+}
 
 .solution {
     display: flex;
@@ -55,37 +64,48 @@ a:active {
 #texts-main {
     align-content: center;
 }
-
+.container{
+   
+   
+}
     
 .box1{
     grid-area: navbar;
+    align-content: center;
+    text-align: left;
+    padding: 40px;
 }
 .box2{
     grid-area: section;
+    padding: 40px;
 }
 .box3{
     grid-area: podcast;
+    padding: 40px;
 }
 .box4{
     grid-area: mike;
+    padding: 40px;
 }
 .box5{
     grid-area: footer;
+    padding: 40px;
 }
 .container {
     display: grid;
-    grid-template-areas:
-    "navbar section section section"
-    "navbar podcast podcast podcast"
-    "mike   mike    mike    footer";
+    gap: 30px;
+    grid-template-areas: 
+    " navbar section section"
+    " navbar podcast podcast"
+    " mike   mike    footer"
+    
+    ;
 }
 
 
 .episode {
-    
     text-align: center;
-  
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     padding: 50px;
 }
 .iframes {
@@ -95,14 +115,9 @@ a:active {
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 120px;
-    margin-left: 120px;
-    padding-top: 50px;
-    background-color: #001931;
-    margin-bottom: 50px;
-
+    background-image: url(assets/footer-bg.png);
+    padding:4px;
+    
 }
 .host-id {
     display: flex;
@@ -119,13 +134,3 @@ a:active {
 .button-hover-now:hover{
     color:grey;
 }
-
-
-
-
-#
- bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8]
- bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] highlight bg-clip-text text-transparent
- width: /**var-start**/<span class="code-css--text code-css--text__6">55.07px</span>/**var-end**/;
-height: /**var-start**/<span class="code-css--text code-css--text__6">50px</span>/**var-end**/;
-background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
