@@ -7,17 +7,154 @@
     <title>my Second assignment</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <linkhref="https:fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    <linkhref="https:fonts.googleapis.com
+        /css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="./styles.css" />
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>       -->
+    <style>
+        @media screen and (max-width: 576px) {
+
+/*Navigation bar */
+            #navigation-bar {
+                flex-direction: row;
+                gap: 16px;
+                padding: 6px;
+                /* border: 2px solid red; */
+                margin: 0px 20px 0px 20px;
+            }
+
+            #navigation-links {
+                display: none;
+            }
+
+            .subscribe-btn {
+                /* font-size: xx-small; */
+                display: none;
+            }
+
+/*Banner Image */
+            .banner img {
+                max-width: 50%;
+                height: auto;
+                /* border: 2px solid red;           */
+            }
+
+            .banner {
+                padding: 40px;
+            }
+
+            .solution {
+                padding: 20px !important;
+            }
+
+            /* ABOUT STATS */
+            .description {
+                margin: 20px !important;
+            }
+
+            /* .description>div {
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+            } */
+            .description>div {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .description>div>div {
+                width: 50%;
+                padding: 20px !important;
+                box-sizing: border-box;
+                text-align: center;
+            }
+
+/* Why Chose Techwave  */
+            .container {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+/* Episodes */
+            .iframes {
+                margin: 0 10px !important;
+                flex-direction: column;
+            }
+
+            .iframes iframe {
+                width: 100%;
+                height: auto;
+            }
+
+/* Host Section */
+            .host-id {
+                margin: 20px !important;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .host-id img {
+                max-width: 100%;
+            }
+/* Footer */
+            footer>div {
+                /* flex-direction: row; */
+                padding: 0px;
+                gap: 0px;
+            }
+
+            .podcast {
+                padding-top: 20px !important;
+            }
+
+            .podcast>p {
+                font-size: larger;
+            }
+
+
+            .banner-image {
+                height: 120px;
+                max-width: 100%;
+                margin-top: 10px;
+            }
+
+            .hero-circle {
+                width: 220px;
+            }
+
+            .hero-mic {
+                width: 110px;
+            }
+
+            .new-badge {
+                position: absolute;
+                top: -20px;
+                left: 18rem;
+                font-size: 0.7rem;
+                transform:rotateX(45'angle');
+            }
+
+            .footer-icons {
+                padding: 20px;
+                gap: 5px;
+            }
+        }
+
+        @media screen and (min-width: 577px) {
+            .hamburger-btn {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body class="open-sans">
     <header style="background-color: #1A0B2E;color: white;">
         <!-- Navigation Bar -->
-        <nav id="navigation-bar" style="border-bottom: 0.00001px solid white;">
+        <nav id="navigation-bar">
             <div>
                 <p style="font-weight: 800;font-size: 1.7rem;">Tech<span
                         style="background: linear-gradient(to right,#F7E93F,#FB09B4, #9100F8);background-clip: text;color: transparent;">Wave</span>
@@ -37,22 +174,25 @@
                 </div>
             </div>
             <div>
-                <button class="button-hover" style="
+                <button class="button-hover subscribe-btn" style="
               background: linear-gradient(to right,#F7E93F,#FB09B4, #9100F8);
               color: white;
-              padding: 08px;
-              border-radius: 14px;
+              padding: 8px;
+              border-radius: 10px;
               font: bold;
               font-weight: bold;
-              border-color: transparent;
             ">
                     Subscribe <i class="fa-solid fa-arrow-right-long"></i>
                 </button>
+                <div class="hamburger-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
         </nav>
         <!-- Banner -->
         <div class="banner" style=" margin: 0;">
-            <div style="padding-top: 0px">
+
+            <!-- <div style="padding-top: 0px">
                 <button class="button-hover-now"
                     style=" padding: 5px; border-radius: 20px; background-color: #00FF88;color: white;">new
                 </button>
@@ -60,17 +200,30 @@
             <div style="display: flex;justify-content: center;align-items: center;  margin-top: 60px;">
                 <img src="assets/hero-circle.png" alt="" class="image border-black" id="img-1">
                 <img src="assets/microphone.png" alt="" class="image" id="img-2">
+            </div> -->
+            <div class="banner-image">
+                <button class="button-hover-now new-badge">NEW</button>
+
+                <img src="assets/hero-circle.png" alt="" class="image" id="img-1">
+                <img src="assets/microphone.png" alt="" class="image" id="img-2">
             </div>
-            <div style="padding-top: 220px;">
+
+
+            <div style="padding-top: 30px; ">
+                <p style="font-size: 4rem; margin-bottom: 0;">TechWave</p>
+                <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
                 <button class="button-hover" style=" background: linear-gradient(to right,#F7E93F,#FB09B4, #9100F8);
-              padding: 10px;font-size: 1rem;
+              padding: 10px;
+              font-size: 1rem;
+              margin-right: 30px;
               border-radius: 20px;
-              font: bold;gap: 8px;
-              font-weight: bold;;"><img src="assets/spotify.png" alt="" style="width: 15px;"> Listen On
+              font: bold;
+              font-weight: bold;"><img src="assets/spotify.png" alt="" style="width: 15px;"> Listen On
                     Spotify</button>
                 <button class="button-hover"
                     style="background-color: transparent; border-radius: 20px; padding:12px; color: #00FF88; font-size: 1rem; gap: 10px; ">
                     <img src="assets/message.png" alt=""> Subscribe</button>
+
             </div>
         </div>
     </header>
@@ -79,12 +232,13 @@
     <main style="margin: 0;">
         <!-- Then Main Part Solution -->
         <section style="background-color:#1A0B2E; margin: 0;">
-            <div style="text-align: center; padding-top: 120px;padding-bottom: 50px;">
+            <div style="text-align: center; padding-top: 120px;padding-bottom: 50px;" class="podcast">
                 <div>
-                    <h2 style="margin-top: 0; padding-top: 20px; color: white;font-weight: 700;font-size: 2rem;">About
+                    <h2 class="font-1"
+                        style="margin-top: 0; padding-top: 20px; color: white;font-weight: 700;font-size: 2rem;">About
                         the Podcast</h2>
                     <p style="color: white;margin-bottom: 40px; opacity: 80% ; 
-                    font-size:small;">
+                    font-size:medium;">
                         TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. <br> We
                         break down complex topics into digestible insights, explore productivity strategies that
                         actually works, <br>and share stories of personal growth from industry leaders. <br> <br> <br>
@@ -93,8 +247,9 @@
                     </p>
                 </div>
 
-                <div style="border-top: 1px solid; margin: 120px ; margin-right: 120px; border-color: white; ">
-                    <div style="margin-top: 10px; display: flex; justify-content: space-between;">
+                <div class="description"
+                    style="border-top: 1px solid; margin: 120px ; margin-right: 120px; border-color: white; ">
+                    <div style="margin-top: 10px; display:flex; justify-content: space-between;">
                         <div style=" background-color:#1A0B2E; padding: 40px; ">
                             <h1 style="margin: 0; color: #00FF88;">150K+</h1>
                             <p style="margin: 0;color: white">Monthly Listeners </p>
@@ -116,9 +271,10 @@
             </div>
 
         </section>
+
         <!--why choose tech wave  -->
         <div>
-            <div class="solution" style=" padding: 120px;background-color: #230E3D; ">
+            <div class="solution" style=" padding: 120px; background-color: #230E3D; ">
                 <div id="texts-main">
                     <p style="font-weight: 600;font-size: 3rem;color: white;padding-bottom: 50px;text-align: center;">
                         <b>Why Choose TechWave</b>
@@ -177,7 +333,7 @@
                 <div class="iframes" style="margin: 0 120px; gap: 30px; padding-bottom: 120px;">
                     <div
                         style="background-color: #250D44;padding: 10px;border: 1px solid #1A0B2E;border-radius: 24px; ">
-                        <iframe width="360" height="315"
+                        <iframe width="360" height="315" style="border-radius: 5%;"
                             src="https://www.youtube.com/embed/5MWT_doo68k?si=FRy3b516bO1MMdOw"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -189,7 +345,7 @@
                         <p style="color: #00FF88;"><img src="assets/clock.png" alt=""> 42 min</p>
                     </div>
                     <div style="background-color: #250D44;padding: 10px;border: 1px solid #1A0B2E;border-radius: 24px;">
-                        <iframe width="360" height="315"
+                        <iframe width="360" height="315" style="border-radius: 5%;"
                             src="https://www.youtube.com/embed/kJb-tAi8YO4?si=_zAkMfn0omglG8IL"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -200,7 +356,7 @@
                         <p style="color: #00FF88;"><img src="assets/clock.png" alt=""> 35 min</p>
                     </div>
                     <div style="background-color: #250D44;padding: 10px;border: 1px solid #1A0B2E;border-radius: 24px;">
-                        <iframe width="360" height="315"
+                        <iframe width="360" height="315" style="border-radius: 5%;"
                             src="https://www.youtube.com/embed/LGHsNaIv5os?si=IBDMYyLrlJZ2l9OC"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -255,26 +411,32 @@
     <!--Footer-->
     <footer style="justify-content: center; text-align: center;">
         <div class="footer">
-            <div style="">
+            <div>
                 <h1 style="color: white; font-size: 5rem; ">Tech<span
                         style="background: linear-gradient(to right,#F7E93F,#FB09B4, #9100F8);background-clip: text;color: transparent;">Wave</span>
             </div>
-            <div style=" display: flex; justify-content: center; gap: 50px; color: white;">
-                <div style="display: flex; align-items: center; ">
-                    <img src="assets/spotify.png" alt="" style="padding-right: 5px; height: 2rem; width: 2rem;">
-                    <p>Spotify</p>
+            <div style=" display: flex; justify-content: center; gap: 50px; color: white;" class="footer-icons">
+                <div>
+                    <div style="display: flex; align-items: center;  ">
+                        <img src="assets/spotify.png" alt="" style="padding-right: 5px; height: 2rem; width: 2rem;">
+                        <p>Spotify</p>
+                    </div>
+                    <div style="display: flex; align-items: center; ">
+                        <img src="assets/apple-podcast.png" alt=""
+                            style="padding-right: 5px; height: 2rem; width: 2rem;">
+                        <p>Apple Podcasts</p>
+                    </div>
                 </div>
-                <div style="display: flex; align-items: center; ">
-                    <img src="assets/apple-podcast.png" alt="" style="padding-right: 5px; height: 2rem; width: 2rem;">
-                    <p>Apple Podcasts</p>
-                </div>
-                <div style="display: flex; align-items: center; ">
-                    <img src="assets/youtube-podcast.png" alt="" style="padding-right: 5px; height: 2rem; width: 2rem;">
-                    <p>YouTube</p>
-                </div>
-                <div style="display: flex; align-items: center; ">
-                    <img src="assets/twitter.png" alt="" style="padding-right: 5px; height: 2rem; width: 2rem;">
-                    <p>Twitter</p>
+                <div>
+                    <div style="display: flex; align-items: center; ">
+                        <img src="assets/youtube-podcast.png" alt=""
+                            style="padding-right: 5px; height: 2rem; width: 2rem;">
+                        <p>YouTube</p>
+                    </div>
+                    <div style="display: flex; align-items: center; ">
+                        <img src="assets/twitter.png" alt="" style="padding-right: 5px; height: 2rem; width: 2rem;">
+                        <p>X</p>
+                    </div>
                 </div>
             </div>
             <div style="color: white; padding-top: 20px;">
